@@ -12,10 +12,16 @@ func main() {
 	var name1 string
 	fmt.Scan(&name1)
 
-	fmt.Printf("How old are you? ")
-
 	var age int
-	fmt.Scan(&age)
+
+	for {
+		fmt.Println("How old are you? ")
+		fmt.Scan(&age)
+		if age >= 18 {
+			break
+		}
+		fmt.Println("you must be 18 or over!")
+	}
 
 	fmt.Printf("hi %v you are %v years old\n", name1, age)
 
