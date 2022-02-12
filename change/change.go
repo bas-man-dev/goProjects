@@ -19,7 +19,7 @@ func main() {
 		}
 	}
 
-	res_1 := int(num1 * 100)
+	var res_1 int = int(num1 * 100)
 	res_2 := math.Round(res_1 * (33 / 5))
 	//coins := 0
 
